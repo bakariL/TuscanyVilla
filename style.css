@@ -5,17 +5,6 @@
     grid-template-columns: repeat(3,1fr);
 }
 
-h2 {
-    justify-content: center;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-
 
 
 .header-nav-1 {
@@ -45,28 +34,31 @@ li a {
 }
 
 .main-2 {
-    grid-column: 1/span 3;
-    background-color: aqua;
+    grid-column: 1/span 2;
     height: 400px;
+    margin:0;
     background-image: url('images/tuscany-villas-sant-anna.jpg');
+    width: 100%;
 }
 
-
-.main {
+.topPic {
     grid-column: 3/span 1;
-    height:400px;
-} 
+    width: 100%;
+}
 
-#a{
+#ttopPic {
+
+    width:100%;
+    height:400px;
+
+}#a {
     grid-column: 1/span 1;
     max-width: 500px
 }
 
-#topPic {
-    height: 400px;
-    display: grid;
+.topPic {
+    
     grid-column: 3/span 1;
-    margin-left: 798px;
 }
 
 .topHeader {
@@ -76,6 +68,7 @@ li a {
 
 .locationsTitle-3 {
     grid-column: 1/span 3;
+    margin:0;
     background-color: dimgray;
     color: white;
     height: 100px;
@@ -83,34 +76,45 @@ li a {
 
 
 .locationOne-4 {
-    grid-column: 1/span 3;
+    grid-column: 1/span 2;
     height: 200px;
     background-color: ghostwhite;
 }
 
 
-
-
+#modernPic {
+    grid-column: 3/span 1;
+    height: 200px;
+    width: 100%;
+}
 
 .locationTwo-5 {
-    grid-column: 1/span 3;
+    grid-column: 2/span 2;
     height: 200px;
     background-color: dimgrey;
 }
 
-
-
+#modernPic2 {
+    grid-column: 1/span 1;
+    height: 200px;
+    width: 100%;
+}
 .loactionThree-6 {
-    grid-column: 1/span 3;
+    grid-column: 1/span 2;
     height: 200px;
     background-color: ghostwhite;;
+}
+#modernPic3 {
+    grid-column: 3/span 1;
+    height: 200px;
+    width: 100%;
 }
 
 .ammenitiesTitle-7 {
     grid-column: 1/span 3;
     background-color: dimgray;
     color: white;
-    height: 100px;
+    height: 200px;
 }
 
 .grid-1 {
@@ -137,6 +141,11 @@ li a {
 }
 
 
+
+#gridTitle1{
+    text-align:center;
+    color: white;
+} 
 
 .grid-4 {
     grid-column: 1/span 1;
@@ -189,11 +198,10 @@ li a {
     color: white;
 }
 
-.reviews-12{
+.carousel-wrapper {
     grid-column: 1/span 3;
     background-color: lightblue;
     height: 200px;
-
 }
 
 .contactTitle-13 {
@@ -203,11 +211,111 @@ li a {
     height: 100px;
 }
 
-.contactForm-14 {
+#phoneIcon {
+    grid-column:1;
+    width:10px;
+    height: 20px;
+}
+
+.carousel-wrapper {
+    height: 400px;
+    position: relative;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 25px 50px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.arrow {
+    position: absolute;
+    top: 0;
+    display: block;
+    width: 50px;
+    height: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    background: url("http://dancort.es/assets/img/css-carousel/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+}
+
+.arrow-prev {
+    left: 0;
+}
+
+.arrow-next {
+    right: 0;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.light {
+    color: white;
+}
+
+@media (max-width: 480px) {
+    .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+    }
+}
+
+}
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+}
+
+.item-1 {
+    z-index: 2;
+    opacity: 1;
+    background: url('https://static.pexels.com/photos/6526/sea-beach-holiday-vacation-large.jpg');
+    background-size: cover;
+}
+
+.item-2 {
+    background: url('https://static.pexels.com/photos/6506/alcohol-bar-drinks-party-large.jpg');
+    background-size: cover;
+}
+
+.item-3 {
+    background: url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+    background-size: cover;
+}
+
+*:target ~ .item-1 {
+    opacity: 0;
+}
+
+#item-1:target ~ .item-1 {
+    opacity: 1;
+}
+
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+}
+
+
+
+
+
+#formHeader {
+    grid-column: 2;
+}
+
+#form {
     grid-column: 2/span 2;
-    grid-row: 14/span 1;
-    background-color: burlywood;
-    height: 200px;
+    height: 100%;
 }
 
 
