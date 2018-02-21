@@ -1,0 +1,244 @@
+﻿.container {
+    display: grid;
+    margin: 2em auto 2em auto;
+    width: 1200px;
+    grid-template-columns: repeat(3,1fr);
+}
+
+h2 {
+    justify-content: center;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+.header-nav-1 {
+   grid-column: 1/span 3;
+    background-color: dimgrey;
+    text-decoration: none;
+}
+
+#logo{
+    float:left;
+}
+
+ul {
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: none;
+    text-decoration: none;
+    float: right;
+    color: white;
+}
+
+.main-2 {
+    grid-column: 1/span 3;
+    background-color: aqua;
+    height: 400px;
+    background-image: url('images/tuscany-villas-sant-anna.jpg');
+}
+
+
+.main {
+    grid-column: 3/span 1;
+    height:400px;
+} 
+
+#a{
+    grid-column: 1/span 1;
+    max-width: 500px
+}
+
+#topPic {
+    height: 400px;
+    display: grid;
+    grid-column: 3/span 1;
+    margin-left: 798px;
+}
+
+.topHeader {
+    display:grid;
+    grid-column: span 1;
+}
+
+.locationsTitle-3 {
+    grid-column: 1/span 3;
+    background-color: dimgray;
+    color: white;
+    height: 100px;
+}
+
+
+.locationOne-4 {
+    grid-column: 1/span 3;
+    height: 200px;
+    background-color: ghostwhite;
+}
+
+
+
+
+
+.locationTwo-5 {
+    grid-column: 1/span 3;
+    height: 200px;
+    background-color: dimgrey;
+}
+
+
+
+.loactionThree-6 {
+    grid-column: 1/span 3;
+    height: 200px;
+    background-color: ghostwhite;;
+}
+
+.ammenitiesTitle-7 {
+    grid-column: 1/span 3;
+    background-color: dimgray;
+    color: white;
+    height: 100px;
+}
+
+.grid-1 {
+    grid-column: 1/span 1;
+    grid-row: 8/span 1;
+    height: 200px;
+    margin: 0;
+    background-image: url('images/3b-348x348.jpg');
+}
+
+.grid-2 {
+    grid-column: 2/span 1;
+    grid-row: 8/span 1;
+    height: 200px;
+    word-wrap: break-word;
+    background-color: white;
+}
+
+.grid-3 {
+    grid-column: 3/span 1;
+    grid-row: 8/span 1;
+    height: 200px;
+    background-image: url('images/42-348x348.jpg');
+}
+
+
+
+.grid-4 {
+    grid-column: 1/span 1;
+    grid-row: 9/span 1;
+    background-color: white;
+}
+
+.grid-5 {
+    grid-column: 2/span 1;
+    grid-row: 9/span 1;
+    height: 200px;
+    background-image: url('images/314-348x348.jpg');
+}
+
+.grid-6 {
+    grid-column: 3/span 1;
+    grid-row: 9/span 1;
+    height: 200px;
+    background-color: white;
+    
+}
+
+
+
+.grid-7 {
+    grid-column: 1/span 1;
+    grid-row: 10/span 1;
+    background-image: url('images/Villa-Rucellai-Toscani-2812-2-348x348.jpg');
+}
+
+.grid-8 {
+    grid-column: 2/span 1;
+    grid-row: 10/span 1;
+    height: 200px;
+    background-color: white;
+}
+
+.grid-9 {
+    grid-column: 3/span 1;
+    grid-row: 10/span 1;
+    height: 200px;
+    background-image: url('images/Villa-Vanna-231-348x348.jpg');
+}
+
+.reviewsTile-11 {
+
+    grid-column: 1/span 3;
+    height:100px;
+    background-color:dimgray;
+    color: white;
+}
+
+.reviews-12{
+    grid-column: 1/span 3;
+    background-color: lightblue;
+    height: 200px;
+
+}
+
+.contactTitle-13 {
+    grid-column: 1/span 3;
+    background-color: dimgray;
+    color:white;
+    height: 100px;
+}
+
+.contactForm-14 {
+    grid-column: 2/span 2;
+    grid-row: 14/span 1;
+    background-color: burlywood;
+    height: 200px;
+}
+
+
+.footer-15 {
+    grid-column: 1/span 3;
+    background-color: dimgrey;
+    color: white;
+    height: 200px;
+}
+
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+    input[type=submit]:hover {
+        background-color: green;
+    }
+
