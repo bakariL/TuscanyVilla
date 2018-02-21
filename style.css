@@ -203,17 +203,75 @@ li a {
     background-color: lightblue;
     height: 200px;
 }
-
+#title{
+    text-align:center;
+    font-size:xx-large;
+    font-weight: 600;
+} 
 .contactTitle-13 {
     grid-column: 1/span 3;
     background-color: dimgray;
-    color:white;
+    color: white;
     height: 100px;
 }
 
+#locTitle{
+    text-align:center;
+    font-weight:300;
+    font-size:x-large;
+}
+
+#subText {
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+}
+
+#ammenTitle {
+    text-align: center;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+#amnSubText {
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+}
+
+#reviewTitle {
+    text-align: center;
+    font-weight: 300;
+    font-size: x-large;
+}
+
+#reviewSubText {
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+}
+#contactTiele {
+    text-align: center;
+    font-weight: 300;
+    font-size: x-large;
+}
+#subText {
+    text-align: center;
+    font-weight: 300;
+    font-size: medium;
+}
+
+#footerTect {
+    text-align: center;
+    font-weight: 300;
+    font-size: x-large;
+   
+} 
+
+
 #phoneIcon {
-    grid-column:1;
-    width:10px;
+    grid-column: 1;
+    width: 10px;
     height: 20px;
 }
 
